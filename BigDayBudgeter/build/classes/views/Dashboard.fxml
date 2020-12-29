@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneDashboard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.DashboardController">
+   <children>
+      <GridPane layoutX="200.0" layoutY="155.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.333" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.333" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.333" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints fillHeight="false" maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" vgrow="SOMETIMES" />
+            <RowConstraints fillHeight="false" maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+          <RowConstraints fillHeight="false" maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+          <RowConstraints fillHeight="false" maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Big Day Budgeter Dashboard" GridPane.columnSpan="2">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="Months by Preference" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableMonths" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+              <columns>
+                <TableColumn fx:id="monthName" editable="false" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" resizable="false" text="Month" />
+                <TableColumn fx:id="monthCount" editable="false" maxWidth="1.7976931348623157E308" minWidth="85.0" prefWidth="-1.0" resizable="false" text="Amount" />
+              </columns>
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+            </TableView>
+            <TextArea fx:id="textAreaReportOne" editable="false" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+            </TextArea>
+            <Label text="Days by Preference" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableDays" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <columns>
+                  <TableColumn fx:id="dayName" editable="false" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" resizable="false" text="Day" />
+                  <TableColumn fx:id="dayCount" editable="false" maxWidth="1.7976931348623157E308" minWidth="85.0" prefWidth="-1.0" resizable="false" text="Amount" />
+               </columns>
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+            </TableView>
+            <TextArea fx:id="textAreaReportTwo" editable="false" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+            </TextArea>
+            <Label text="Indoor, Outdoor, or Both?" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableVenue" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <columns>
+                  <TableColumn fx:id="venueName" editable="false" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" resizable="false" text="Venue" />
+                  <TableColumn fx:id="venueCount" editable="false" maxWidth="1.7976931348623157E308" minWidth="85.0" prefWidth="-1.0" resizable="false" text="Amount" />
+               </columns>
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+            </TableView>
+            <TextArea fx:id="textAreaReportThree" editable="false" prefHeight="200.0" prefWidth="200.0" wrapText="true" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+            </TextArea>
+            <GridPane GridPane.columnSpan="3" GridPane.rowIndex="3">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="15.0" minHeight="15.0" prefHeight="15.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Orange = Low Interest" GridPane.halignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Pink = Mild Interest" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Blue = Strong Interest" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="Green = Peak Interest" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+              <buttons>
+                <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#handleBackButton" text="Back" />
+              </buttons>
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+            </ButtonBar>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+1,6000,Saturday,No Preference,FALSE,FALSE,TRUE,Both
+2,0,Sunday,June,TRUE,FALSE,FALSE,Both
+3,4000,No Preference,September,FALSE,TRUE,TRUE,Outdoor
+4,5500,Friday,No Preference,FALSE,FALSE,TRUE,Both
+5,0,Wednesday,November,TRUE,TRUE,FALSE,Indoor
+6,0,Thursday,November,FALSE,FALSE,FALSE,Both
+7,8000,Friday,No Preference,TRUE,TRUE,TRUE,Outdoor
+8,4500,Saturday,No Preference,TRUE,FALSE,FALSE,Both
+9,6000,No Preference,June,FALSE,FALSE,TRUE,Indoor
+10,0,Saturday,January,FALSE,TRUE,FALSE,Outdoor
+11,0,Tuesday,June,FALSE,FALSE,FALSE,Both
+12,0,Wednesday,October,TRUE,TRUE,FALSE,Both
+13,4750,No Preference,April,TRUE,FALSE,TRUE,Indoor
+14,6000,Sunday,No Preference,TRUE,FALSE,TRUE,Both
+15,6500,Friday,No Preference,FALSE,FALSE,TRUE,Both
+16,7000,Saturday,No Preference,FALSE,TRUE,FALSE,Outdoor
+17,5250,No Preference,October,FALSE,FALSE,FALSE,Outdoor
+18,4750,No Preference,February,TRUE,FALSE,TRUE,Both
+19,0,Friday,March,TRUE,FALSE,FALSE,Both
+20,0,Sunday,September,FALSE,TRUE,FALSE,Indoor
+21,0,Friday,October,TRUE,TRUE,FALSE,Indoor
+22,0,Saturday,June,FALSE,FALSE,TRUE,Both
+23,6000,No Preference,May,FALSE,FALSE,TRUE,Outdoor
+24,5000,Saturday,No Preference,TRUE,TRUE,FALSE,Outdoor
+25,7250,No Preference,October,FALSE,TRUE,TRUE,Both
+26,0,Wednesday,October,TRUE,FALSE,FALSE,Outdoor
+27,7000,Thursday,No Preference,TRUE,FALSE,TRUE,Both
+28,3500,Tuesday,No Preference,FALSE,TRUE,TRUE,Outdoor
+29,0,Saturday,November,FALSE,TRUE,FALSE,Outdoor
+30,0,Sunday,December,TRUE,FALSE,FALSE,Indoor
+31,4500,No Preference,August,TRUE,FALSE,FALSE,Both
+32,4000,Saturday,No Preference,TRUE,TRUE,TRUE,Both
+33,0,No Preference,November,FALSE,TRUE,TRUE,Outdoor
+34,6000,No Preference,November,FALSE,FALSE,FALSE,Both
+35,5000,No Preference,October,TRUE,TRUE,TRUE,Indoor
+36,0,Thursday,April,TRUE,FALSE,TRUE,Indoor
+37,0,Friday,July,FALSE,TRUE,FALSE,Both
+38,0,Saturday,October,TRUE,FALSE,FALSE,Outdoor
+39,5750,No Preference,June,TRUE,FALSE,TRUE,Outdoor
+40,3500,Saturday,No Preference,FALSE,TRUE,FALSE,Outdoor
+41,7000,Monday,No Preference,FALSE,TRUE,TRUE,Both
+42,0,Saturday,July,FALSE,FALSE,TRUE,Indoor
+43,6000,No Preference,October,TRUE,FALSE,FALSE,Both
+44,5000,Sunday,No Preference,TRUE,TRUE,FALSE,Outdoor
+45,0,Tuesday,November,TRUE,TRUE,TRUE,Both
+46,0,Sunday,March,FALSE,TRUE,TRUE,Indoor
+47,0,Friday,September,FALSE,FALSE,FALSE,Both
+48,0,Saturday,December,FALSE,TRUE,FALSE,Outdoor
+49,6500,No Preference,October,TRUE,TRUE,FALSE,Both
+50,5500,Thursday,No Preference,TRUE,FALSE,TRUE,Outdoor

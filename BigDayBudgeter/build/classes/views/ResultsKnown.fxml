@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorBudget" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="views.ResultsKnownController">
+   <children>
+      <GridPane layoutX="300.0" layoutY="205.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="75.0" minHeight="75.0" prefHeight="75.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Results">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelBudget" text="labelBudget" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="labelRemainingBudget" text="labelRemainingBudget" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <GridPane GridPane.columnSpan="2147483647" GridPane.rowIndex="3">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0" GridPane.columnIndex="2">
+                    <buttons>
+                      <Button fx:id="buttonBack" mnemonicParsing="false" onAction="#handleBackButton" text="Back to Menu" />
+                    </buttons>
+                     <GridPane.margin>
+                        <Insets bottom="15.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                  </ButtonBar>
+                  <Label fx:id="labelRunAgainInfo" maxWidth="1.7976931348623157E308" prefHeight="70.0" prefWidth="349.0" text="Each listed choice represents an option that is cheaper than your remaining budget. Once you have made more decisions, please re-run your budget with your preferences to be sure all the combined options are still under budget." wrapText="true" GridPane.columnSpan="2">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnSpan="2" GridPane.rowIndex="2">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.67" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.67" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.67" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.67" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.67" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.67" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Your Choice of Day" GridPane.columnSpan="3">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="textAreaDayChoice" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                  </TextArea>
+                  <Label text="Your Choice of Month" GridPane.columnSpan="3" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="textAreaMonthChoice" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                  </TextArea>
+                  <Label text="Your Choice of Vendors" GridPane.columnSpan="3" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="textAreaVendorChoice" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnSpan="3" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                  </TextArea>
+                  <Label text="Our Suggested Days" GridPane.columnIndex="3" GridPane.columnSpan="3">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="textAreaDaySuggest" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                  </TextArea>
+                  <Label text="Our Suggested Months" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="textAreaMonthSuggest" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                  </TextArea>
+                  <Label text="Our suggested Vendors" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="textAreaVendorSuggest" editable="false" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" left="20.0" right="20.0" top="15.0" />
+                     </GridPane.margin>
+                  </TextArea>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
